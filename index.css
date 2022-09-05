@@ -1,0 +1,72 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    background-image: linear-gradient(to right, rgb(0, 128, 111), rgb(5, 5, 48));
+    color: wheat;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem 0rem;
+    padding: 0rem 0rem;
+}
+h2{
+    font-size: 2rem;
+}
+.inputElement{
+    margin: 1rem 0rem;
+    padding: 0.5rem 0.5rem;
+    width: 25%;
+    border-radius: 0.5rem;
+    border: 2px solid rgb(5, 5, 48);
+    font-size: 1rem;
+}
+.inputElement:focus{
+    border: 2px solid rgb(0, 128, 111);
+    outline: 2px solid rgb(0, 128, 111);
+}
+
+.btn{
+    margin: 1rem 0rem;
+    padding: 0.5rem 0.5rem;
+    width: 15%;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.btn:hover{
+    background-image: linear-gradient(to right, rgb(5, 5, 48), rgb(0, 128, 111));
+    color: wheat;
+    box-shadow: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:focus{
+    outline: 2px solid rgb(0, 128, 111);
+    border: none;
+}
+
+#img{
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+@media (max-width: 700px) {
+    h2{
+        font-size: 1.5rem;
+    }
+    .btn{
+        width: 35%;
+    }
+    .inputElement{
+        width: 80%;
+    }
+  }
